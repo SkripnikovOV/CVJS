@@ -1,5 +1,17 @@
-  let main = document.getElementsByClassName('main')
-  main.innerHTML = 'hello world!'
-  console.log(main)
+// In about.js
+export let dataAbout = {
+  English: {
+      img: 'link to picture',
+      paragraph: 'Hi! About me',
+  },
+  Russian: {
+    img: 'link to picture',
+    paragraph: 'Hi! About me',
+} 
+};
+  
+
+
+
 
 
