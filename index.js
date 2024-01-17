@@ -11,6 +11,11 @@ function addDataToPage(language) {
         link: ['About', 'Experience', 'Skills', 'Education'],
         button: 'Contacts',
       },
+      footername: { 
+        Socialnetwork: 'Socialnetwork',
+        Email: 'Email',
+        Phone: 'Phone'
+      },
     },
     Russian: {
         header: {
@@ -20,21 +25,26 @@ function addDataToPage(language) {
           button: 'Контакты',
           
         },
-        
+        footername: { 
+          Socialnetwork: 'Социальные сети',
+          Email: 'Электронная почта',
+          Phone: 'Телефон'
+        },
        
       },
       footer: {
         img: {
-          socialnetwork: 'link to socialnetwork',
-          email: 'link to email',
-          phone: 'link to phone'
+          Socialnetwork: './img/hh.ru.svg',
+          Email: 'link to email',
+          Phone: 'link to phone'
         },
         link: {
-        socialnetwork: 'https://spb.hh.ru/resume/a6728f72ff09cfb9180039ed1f66696e635162',
-        email: 'skrypnik52@gmail.com',
-        phone: '+79063560352'
+        Socialnetwork: 'https://spb.hh.ru/resume/a6728f72ff09cfb9180039ed1f66696e635162',
+        Email: 'skrypnik52@gmail.com',
+        Phone: '+79063560352'
     },
-    copyright: '© 2024 By Oleg Skripnikov'
+    copyright: '© 2024 By Oleg Skripnikov',
+    languages: ['English', 'Russian']
         
   }};
   
@@ -116,14 +126,14 @@ renderPage();
         for(let image in data.footer.img) {
         let conteynt = document.createElement('div');
         let title = document.createElement('h6');
-        title.textContent = image;
+        title.textContent = data[language].footername[image];
         let img = document.createElement('img');
         img.classList.add(image.replace(' ', '-').toLowerCase());
         img.src = data.footer['img'][image];
         let paragraph = document.createElement('p');
         paragraph.classList.add(image.replace(' ', '-').toLowerCase());
         paragraph.textContent = data.footer['link'][image];
-        if (image === 'socialnetwork') {
+        if (image === 'Socialnetwork') {
           paragraph.textContent = data.footer['link'][image].split('/resume/')[0];
         }
         // Create a link and append the image to it

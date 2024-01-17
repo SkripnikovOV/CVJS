@@ -9,9 +9,49 @@ body {
 .header-class {
     background-color: #fadfade1;
     display: flex;
+    height: 60px;
     top: 0;
     right: 0;
 }
+
+.header-class img {
+    margin: 20px 50px 20px 150px;
+   
+}
+
+.header-class h1 {
+    margin: 18px 600px 0  0 ;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #235338;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+   
+}
+
+.button-class {
+    background-color: #358358e1;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    margin: 10px 10px 10px 60px;
+    height: 40px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.header-class a {
+    margin: 20px;
+    height: 20px;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .main-class {
     display: flex;
     height: 100vh;
@@ -33,6 +73,9 @@ body {
 }
 .footer-class img {
     margin: 10px;
+    height: 30px;
+    width: 30px;
+
 }
 
 .footer-contact {
@@ -43,7 +86,7 @@ body {
 }
 
 .footer-contact div {
-    margin: 0 10%;
+    margin: 0 9%;
 
 }
 
